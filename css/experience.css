@@ -55,6 +55,10 @@
     border-radius: 5px;
 }
 
+.experience a:hover{
+    text-decoration: none;
+}
+
 .experience__links__repository{
     color: var(--colour_blue);
 }

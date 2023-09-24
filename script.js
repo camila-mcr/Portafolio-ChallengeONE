@@ -67,19 +67,9 @@ function validarMensaje(input) {
     input.setCustomValidity(mensaje);
 };
 
-function validarInput(input) {
-    let mensaje = "";
-    if (input.value === ""){
-        mensaje = "Por favor llene este campo.";
-    };
-
-    input.setCustomValidity(mensaje);
-};
-
 
 function validate(input){
     const inputType = input.id;
-    let validInput = null;
 
     if (validators[inputType]) {
         validators[inputType](input);
@@ -89,21 +79,16 @@ function validate(input){
     if (input.validity.valid === false) {
         input.parentElement.classList.add("error");
         input.parentElement.querySelector(".error__message").innerHTML = showErrorMessage(inputType, input);
-        validInput = false;
     } else {
         input.parentElement.classList.remove("error");
         input.parentElement.querySelector(".error__message").innerHTML = "";
-        validInput = true;
     };
 };
 
 
-
 const validators = {
-    name_contact: (input) => {validarNombre(input); validarInput(input)},
-    email: (input) => validarInput(input),
-    subject: (input) => validarInput(input),
-    message: (input) => {validarMensaje(input); validarInput(input)},
+    name_contact: (input) => validarNombre(input),
+    message: (input) => validarMensaje(input),
 };
 
 
