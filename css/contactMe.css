@@ -1,0 +1,176 @@
+.contactMe{
+    background-color: var(--background_blue);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactMe__img{
+    display: none;
+}
+
+.contactMe h2{
+    font-weight: 500;
+}
+
+.contactMe__form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 5%;
+}
+
+.contactMe input, textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: var(--colour_grey);
+    padding: 5%;
+}
+
+.contactMe input::placeholder{
+    color: var(--colour_lightgrey);
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.contactMe textarea::placeholder{
+    color: var(--colour_lightgrey);
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.contactMe input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--colour_blue);
+}
+
+.contactMe textarea:focus{
+    outline: none;
+    border-bottom: 2px solid var(--colour_blue);
+}
+
+
+.contactMe button{
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--colour_blue);
+    color: var(--colour_white);
+}
+
+.contactMe button:disabled{
+    background-color: var(--colour_grey);
+}
+
+.contactMe button:enabled:hover{
+    cursor: pointer;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.error input{
+    border: 2px solid var(--colour_red);
+}
+
+.error textarea{
+    border: 2px solid var(--colour_red);
+}
+
+.error__message{
+    color: var(--colour_red);
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 1% 1% 0 5%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contactMe{
+        padding: 5%;
+    }
+
+    .contactMe input, textarea{
+        padding: 2%;
+    }
+
+    .contactMe button{
+        width: 25%;
+        padding: 2%;
+    }
+
+    .error__message{
+        font-size: 12px;
+        line-height: 14px;
+        padding: 1% 1% 0 2%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contactMe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .contactMe h1{
+        margin-bottom: 5px;
+    }
+
+    .contactMe h2{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .contactMe__img{
+        display: inline-block;    
+        width: 40%;    
+    }
+
+    .contactMe__img img{
+        width: 100%;
+    }
+
+    .contactMe__content{
+        width: 55%;
+    }
+
+    .contactMe__form{
+        gap: 28px;
+    }
+
+    .contactMe input, textarea{
+        padding: 2%;
+    }
+
+    .contactMe textarea{
+        height: calc(100vw*0.1);
+    }
+
+    .contactMe button{
+        width: calc(100vw*0.15);
+        padding: 3%;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+
+    .error__message{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

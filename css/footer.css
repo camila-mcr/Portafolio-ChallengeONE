@@ -1,0 +1,45 @@
+footer{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+footer h2{
+    font-weight: 500;
+    text-align: center;
+    padding-top: 5px;
+}
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+svg path{
+    fill: var(--colour_grey);
+}
+
+svg:hover path{
+    fill: var(--colour_blue);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    footer{
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer{
+        padding: 3%;
+    }
+
+    footer h2{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

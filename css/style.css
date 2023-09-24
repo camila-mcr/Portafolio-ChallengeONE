@@ -1,0 +1,75 @@
+:root{
+    --colour_grey: #464646;
+    --colour_lightgrey: #A2A2A2;
+    --colour_blue: #2A7AE4;
+    --colour_white: #FFFFFF;
+    --colour_red: #D30000;
+    --background_blue: #EAF2FD;
+    --background_grey: #F5F5F5;
+    --font_raleway: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: var(--background_grey);
+    font-family: var(--font_raleway);
+    color: #464646;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 0;
+}
+
+h2{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+h3{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: var(--colour_grey);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+li{
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    h1{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    h3{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    p{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
